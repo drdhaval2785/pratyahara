@@ -45,12 +45,21 @@ $pratyahara = str_replace(" -l"," -l</br>",$pratyahara);
 
 if ($text === "ra" && $it === "y")
 {
-echo "The pratyahara is: r -w l</br>";
+echo "The pratyahara is:</br> r -w l</br>";
 }
 elseif ($text === "ra" && $it === "n")
 {
-echo "The pratyahara is: r l</br>";
+echo "The pratyahara is:</br> r l</br>";
 }
+elseif ($text === "yR" && $it === "y")
+{
+echo "The pratyahara is:</br> y v r -w l -R</br>";
+}
+elseif ($text === "yR" && $it === "n")
+{
+echo "The pratyahara is:</br> y v r </br>l</br>";
+}
+
 elseif (in_array($text[1],$shiv)!==false)
 {
 echo "The pratyahara is: </br>".$pratyahara;
